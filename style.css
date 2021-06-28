@@ -12,6 +12,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color: #444;
+  background: linear-gradient(0deg, #ccc, #fff 30%);
 }
 
 p {
@@ -21,7 +22,7 @@ p {
 #main-header {
   width: auto;
   height: 200px;
-  background: #ccc;
+  /* background: #ccc; */
   position: relative;
 }
 #main-header h1 {
@@ -71,6 +72,10 @@ p {
   height: calc(100vh - 200px);
 }
 
+#title figure img {
+  max-width: 100%;
+}
+
 .more-btn {
   background: var(--main-color);
   display: inline-block;
@@ -80,3 +85,13 @@ p {
   border-radius: 20px;
   margin-top: 1em;
 }
+
+/* 하단 이미지 아이콘 */
+nav.pager {
+  position: absolute;
+}
+
+nav.sns {
+  position: absolute;
+}
+
