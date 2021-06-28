@@ -19,6 +19,10 @@ p {
   line-height: 1.6;
 }
 
+ul {
+  list-style-type: none;
+}
+
 #main-header {
   width: auto;
   height: 200px;
@@ -88,10 +92,32 @@ p {
 
 /* 하단 이미지 아이콘 */
 nav.pager {
-  position: absolute;
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  outline: 1px solid red;
+  transform: translateX(-50%);
+}
+nav.pager > ul > li {
+  display: inline-block; 
+  outline: 1px solid green;
+  text-align: center;
+}
+nav.pager > ul > li > a {
+  display: block;
+}
+nav.pager > ul > li > a > img {
+  width: 50%;
 }
 
 nav.sns {
-  position: absolute;
+  position: fixed;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+nav.sns img {
+  width: 32px;
+  margin-bottom: 1em;
 }
 
