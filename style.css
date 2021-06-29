@@ -1,6 +1,8 @@
 /* style.css */
 :root {
   --main-color: #017143;
+  --sub-color1: #ee7d9b;
+  --sub-color2: #ba2d93;
 }
 
 * {
@@ -24,6 +26,7 @@ ul {
 }
 
 #main-header {
+  min-width: 1200px;
   width: 100%;
   height: 200px;
   /* background: #ccc; */
@@ -52,8 +55,13 @@ ul {
   font-weight: 600;
 }
 
+#title {
+  min-width: 1200px;
+  width: 100%;
+}
+
 #title .title-group {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   width: 50%;
   height: calc(100vh);
   float: left;
@@ -64,11 +72,11 @@ ul {
 }
 
 .content-box {
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
 }
 
 #title .title-group h2 {
-  font-size: 46px;
+  font-size: 4.4vw; /* 반응형 가변 글자 */
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -79,17 +87,22 @@ ul {
 
 #title figure {
   width: 50%;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   float: left;
   text-align: center;
   height: calc(100vh);
   display: flex;
   align-items: center; /* 수직정렬 */
-  justify-content: center;
+  justify-content: center; /* 수평정렬 */
+  background-image: url(images/circle-pie.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 80%;
 }
 
 #title figure img {
   max-width: 100%;
+  margin-top: 100px;
 }
 
 .more-btn {
@@ -107,12 +120,12 @@ nav.pager {
   position: fixed;
   bottom: 40px;
   left: 50%;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   transform: translateX(-50%);
 }
 nav.pager > ul > li {
   display: inline-block; 
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   text-align: center;
 }
 nav.pager > ul > li > a {
@@ -133,3 +146,10 @@ nav.sns img {
   margin-bottom: 1em;
 }
 
+nav.pager > ul > li > a {
+  transition-duration: 0.5s;
+}
+
+nav.pager > ul > li > a:hover {
+  transform: scale(1.2);
+}
