@@ -94,7 +94,7 @@ ul {
   display: flex;
   align-items: center; /* 수직정렬 */
   justify-content: center; /* 수평정렬 */
-  background-image: url(images/circle-pie.svg);
+  background-image: url(images/circle-pie1.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 80%;
@@ -112,7 +112,7 @@ ul {
   text-decoration: none;
   padding: 10px 25px;
   border-radius: 20px;
-  margin-top: 1em;
+  margin-top: 3em;
 }
 
 /* 하단 이미지 아이콘 */
