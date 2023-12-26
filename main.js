@@ -1,5 +1,5 @@
 // main.js
-$(function(){
+window.onload = function() {
   // 이미지, 배경 세팅값
   var titleData = [
     {
@@ -19,25 +19,18 @@ $(function(){
   // 이벤트
   $('.pager > ul > li').eq(0).click(function(){
     // 타이틀 제품 이미지
-    $('figure img')
-      .attr('src',  titleData[0].imgUrl);
-    // 타이틀 배경
-    $('#title figure').css('background-image', `url(${titleData[0].bgUrl})`);
-    console.log(titleData[0].bgUrl)
+    $('.circle-bg svg .st0').css('fill', '#017143');
+    $('#title figure img').attr('src', titleData[0].imgUrl)
   });
 
   $('.pager > ul > li').eq(1).click(function(){
-    $('figure img')
-      .attr('src',  titleData[1].imgUrl);
-    $('#title figure').css('background-image', `url(${titleData[1].bgUrl})`);  
-    console.log(titleData[0].bgUrl)
+    $('.circle-bg svg .st0').css('fill', '#ee7d9b');
+    $('#title figure img').attr('src', titleData[1].imgUrl)
   });
 
   $('.pager > ul > li').eq(2).click(function(){
-    $('figure img')
-      .attr('src',  titleData[2].imgUrl);
-      $('#title figure').css('background-image', `url(${titleData[2].bgUrl})`);    
+    $('.circle-bg svg .st0').css('fill', '#ba2d93'); 
+    $('#title figure img').attr('src', titleData[2].imgUrl)  
   });
 
-
-})
+}
